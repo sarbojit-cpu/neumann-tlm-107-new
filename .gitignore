@@ -76,7 +76,6 @@ web_modules/
 
 # Next.js build output
 .next
-out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -141,3 +140,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ---- Remotion project ----
+# Bundler output and QA stills are regenerated; don't commit them.
+/build/
+/qa/
+.remotion/
+# The final rendered MP4 is large and delivered as a downloadable zip,
+# not committed to git. The thumbnail PNG IS committed.
+/out/*.mp4
+/out/*.mov
