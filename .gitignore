@@ -146,7 +146,6 @@ vite.config.ts.timestamp-*
 /build/
 /qa/
 .remotion/
-# The final rendered MP4 is large and delivered as a downloadable zip,
-# not committed to git. The thumbnail PNG IS committed.
-/out/*.mp4
+# The final rendered MP4 (out/video.mp4) is committed since it fits under
+# GitHub's 100MB per-file limit. The thumbnail PNG is also committed.
 /out/*.mov
