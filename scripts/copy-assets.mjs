@@ -66,6 +66,12 @@ const map = {
   // --- Logos (black artwork on transparent) ---
   "NEUMANN BERLIN LOGO.png": "logos/logo-neumann.png",
   "SHIVANSH ELECTRONICS LOGO.png": "logos/logo-shivansh.png",
+  // --- Long-form-only additions: genuinely new material not used in the reel ---
+  "1008b9dd90dd07439c6f2be5eccbad97.jpg": "images/mount-nickel-branded.jpg",
+  "1d1485b8b4deb0946d3c5b6fe2596167.jpg": "images/kit-composite.jpg",
+  "NEUMANN TLM 107 IMAGE-1 (9).jpg": "images/nickel-boom-mount.jpg",
+  "4e364760ab308f5df484a0e760f17c48.jpg": "images/control-diagram-annotated.jpg",
+  "image_5szcJVlpZ.jpg": "images/candid-home-studio.jpg",
 };
 
 let copied = 0;
