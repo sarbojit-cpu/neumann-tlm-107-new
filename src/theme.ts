@@ -62,6 +62,8 @@ export const BRAND = {
   instagram: "instagram.com/@shivanshelectronics.in",
   facebook: "facebook.com/@shivanshelectronics.in",
   linkedin: "linkedin.com/@shivanshelectronics-in",
+  threads: "threads.com/@shivanshelectronics.in",
+  twitter: "x.com/sarbo_shivansh",
   youtube: "youtube.com/@shivanshelectronics-in",
   whatsapp: ["+91 98316 62458", "+91 91477 00677", "+91 89818 07755"],
   community: "whatsapp.com/channel/0029VbBzlQH3rZZfQBHsf20K",

@@ -145,7 +145,11 @@ vite.config.ts.timestamp-*
 # Bundler output and QA stills are regenerated; don't commit them.
 /build/
 /qa/
+/qa-longform/
 .remotion/
-# The final rendered MP4 (out/video.mp4) is committed since it fits under
-# GitHub's 100MB per-file limit. The thumbnail PNG is also committed.
+# The reel's final MP4 (out/video.mp4) is committed since it fits under
+# GitHub's 100MB per-file limit. Thumbnails are also committed.
+# The long-form MP4 (out/video-longform.mp4) is expected to exceed 100MB at
+# ~600s — it is delivered separately (not committed) rather than via git.
 /out/*.mov
+/out/video-longform.mp4

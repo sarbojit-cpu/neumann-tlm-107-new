@@ -9,9 +9,12 @@
     "typecheck": "tsc --noEmit",
     "bundle": "remotion bundle",
     "make-audio": "node scripts/make-audio.mjs",
+    "make-audio:longform": "node scripts/make-audio-longform.mjs",
     "make-assets": "node scripts/copy-assets.mjs",
+    "setup": "npm run make-audio && npm run make-audio:longform",
     "still": "remotion still",
     "render": "remotion render MainReel out/video.mp4 --concurrency=2",
+    "render:longform": "remotion render LongForm out/video-longform.mp4 --concurrency=4",
     "render:thumb": "remotion still Thumbnail out/thumbnail.png"
   },
   "dependencies": {

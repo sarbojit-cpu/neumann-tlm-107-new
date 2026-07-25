@@ -108,3 +108,31 @@ export const Chat: React.FC<IProps> = ({ size = 26, color = "#111" }) => (
     <path d="M7 10h10M7 12.6h6" stroke={color} strokeWidth="1.7" strokeLinecap="round" />
   </S>
 );
+
+export const Threads: React.FC<IProps> = ({ size = 26, color = "#111" }) => (
+  <S size={size}>
+    <path
+      d="M12 21c-4.5 0-7.5-2.7-7.5-9S7.5 3 12 3c3.6 0 6.2 1.7 6.9 4.6l-2 .5C16.4 6.3 14.6 5 12 5 8.7 5 6.7 6.9 6.6 10.4c.9-.7 2.2-1.1 3.7-1.1 3.1 0 5.1 1.6 5.1 4.2 0 2.7-2.2 4.4-5.3 4.4-2.3 0-4-1-4.5-2.7"
+      stroke={color}
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M10.2 11.2c2.6 0 3.4 1 3.4 2.2 0 1.5-1.2 2.4-2.9 2.4-1.2 0-2.2-.5-2.2-1.5 0-1.3 1.6-1.9 3.6-1.9.9 0 1.6.1 2.1.3"
+      stroke={color}
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </S>
+);
+
+export const TwitterX: React.FC<IProps> = ({ size = 26, color = "#111" }) => (
+  <S size={size}>
+    <path
+      d="M4 4l7 8.5L4.3 20H6l5.8-6.3L16 20h4l-7.4-9L19.4 4H17.7l-5.4 5.8L8 4H4Z"
+      fill={color}
+    />
+  </S>
+);

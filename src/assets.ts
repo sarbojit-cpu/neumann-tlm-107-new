@@ -52,6 +52,12 @@ export const IMG = {
   ecoTubePsu: staticFile("images/eco-tube-psu.png"),
   ecoU87: staticFile("images/eco-u87.png"),
   ecoClipMic: staticFile("images/eco-clip-mic.png"),
+  // --- Long-form-only additions ---
+  mountNickelBranded: staticFile("images/mount-nickel-branded.jpg"),
+  kitComposite: staticFile("images/kit-composite.jpg"),
+  nickelBoomMount: staticFile("images/nickel-boom-mount.jpg"),
+  controlDiagramAnnotated: staticFile("images/control-diagram-annotated.jpg"),
+  candidHomeStudio: staticFile("images/candid-home-studio.jpg"),
 } as const;
 
 export const LOGO = {
@@ -62,6 +68,8 @@ export const LOGO = {
 export const AUDIO = {
   music: staticFile("audio/music-bed.wav"),
   vo: staticFile("vo/voiceover.mp3"),
+  musicLongform: staticFile("audio/music-bed-longform.wav"),
+  voLongform: staticFile("vo/voiceover-longform.mp3"),
   // SFX palette (rotated across transitions/accents)
   whooshUp: staticFile("audio/sfx-whoosh-up.wav"),
   whooshDown: staticFile("audio/sfx-whoosh-down.wav"),
