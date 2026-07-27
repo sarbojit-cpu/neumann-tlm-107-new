@@ -7,9 +7,10 @@ import { DarkBase, Particles, Vignette, hexA, ChevronField } from "./components/
 import { LogoPlate } from "./components/LogoPlate";
 import { GlowOrb, CornerTicks, Watermark } from "./components/Bits";
 import { Tag } from "./components/Ui";
+import { LanguageBadge, ThumbLang } from "./components/LanguageBadge";
 
 /** Standalone premium 9:16 thumbnail — fully static (looks complete at any frame). */
-export const Thumbnail: React.FC = () => {
+export const Thumbnail: React.FC<{ lang?: ThumbLang }> = ({ lang = "english" }) => {
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.inkDeep }}>
       <DarkBase glow={COLORS.champagne} glowX={50} glowY={48} />
@@ -36,6 +37,11 @@ export const Thumbnail: React.FC = () => {
           <LogoPlate which="neumann" width={470} />
         </div>
       </AbsoluteFill>
+
+      {/* Language badge — consistent top-left placement, only the label differs */}
+      <div style={{ position: "absolute", top: 148, left: 56 }}>
+        <LanguageBadge lang={lang} />
+      </div>
 
       {/* Title */}
       <AbsoluteFill style={{ alignItems: "center" }}>
