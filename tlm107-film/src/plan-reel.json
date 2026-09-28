@@ -1,0 +1,2537 @@
+{
+ "name": "reel",
+ "fps": 30,
+ "duration": 180.0,
+ "frames": 5400,
+ "beat": 0.6666666666666666,
+ "beatFrames": 20,
+ "beatOffset": 0.0,
+ "sections": [
+  {
+   "at": 0.0,
+   "f": 0,
+   "type": "verse"
+  },
+  {
+   "at": 2.6667,
+   "f": 80,
+   "type": "break"
+  },
+  {
+   "at": 8.0,
+   "f": 240,
+   "type": "drop"
+  },
+  {
+   "at": 45.3333,
+   "f": 1360,
+   "type": "breakdown"
+  },
+  {
+   "at": 88.0,
+   "f": 2640,
+   "type": "build"
+  },
+  {
+   "at": 114.6667,
+   "f": 3440,
+   "type": "drop"
+  },
+  {
+   "at": 176.0,
+   "f": 5280,
+   "type": "end"
+  }
+ ],
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 2.0,
+   "f0": 0,
+   "f1": 60,
+   "t": "FIVE MICS. ONE BODY.",
+   "e": "ONE BODY.",
+   "h": "Five microphones.",
+   "x": "One body.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 1,
+   "start": 2.0,
+   "end": 8.0,
+   "f0": 60,
+   "f1": 240,
+   "t": "QUIETER THAN THE ROOM",
+   "e": "ROOM",
+   "h": "Quieter than the room.",
+   "x": "Just ten dB-A self-noise, below the air of a quiet studio.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 2,
+   "start": 8.0,
+   "end": 16.0,
+   "f0": 240,
+   "f1": 480,
+   "t": "NEUMANN TLM 107",
+   "e": "TLM 107",
+   "h": "Neumann TLM 107.",
+   "x": "A multi-pattern large-diaphragm condenser, designed and built in Germany, for every voice and every instrument you record.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 3,
+   "start": 16.0,
+   "end": 24.0,
+   "f0": 480,
+   "f1": 720,
+   "t": "FIVE POLAR PATTERNS",
+   "e": "FIVE",
+   "h": "Five polar patterns.",
+   "x": "Omni, wide cardioid, cardioid, hypercardioid and figure-eight, from one capsule. One microphone does the work of five.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 4,
+   "start": 24.0,
+   "end": 32.0,
+   "f0": 720,
+   "f1": 960,
+   "t": "ONE SWITCH",
+   "e": "SWITCH",
+   "h": "One switch.",
+   "x": "Pattern, pad and low cut in one control. The ring lights up, then goes dark after fifteen seconds.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 5,
+   "start": 32.0,
+   "end": 40.0,
+   "f0": 960,
+   "f1": 1200,
+   "t": "NICKEL OR BLACK",
+   "e": "OR",
+   "h": "Nickel or black.",
+   "x": "Two finishes with identical insides, classic bright nickel or discreet black, dressed to match your studio.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 6,
+   "start": 40.0,
+   "end": 45.3333,
+   "f0": 1200,
+   "f1": 1360,
+   "t": "THE SECRET?",
+   "e": "SECRET?",
+   "h": "The secret?",
+   "x": "What makes it sound this open is what Neumann left out.",
+   "ch": 0,
+   "end_screen": false
+  },
+  {
+   "i": 7,
+   "start": 45.3333,
+   "end": 53.3333,
+   "f0": 1360,
+   "f1": 1600,
+   "t": "NO TRANSFORMER",
+   "e": "NO",
+   "h": "No transformer.",
+   "x": "A transformerless circuit keeps the sound open and transparent, with full, unrestricted bass even at the highest levels.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 8,
+   "start": 53.3333,
+   "end": 61.3333,
+   "f0": 1600,
+   "f1": 1840,
+   "t": "A BRAND-NEW CAPSULE",
+   "e": "CAPSULE",
+   "h": "A brand-new capsule.",
+   "x": "Dual-diaphragm and edge-terminated, developed specifically for this microphone, so every pick attack and consonant stays true.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 9,
+   "start": 61.3333,
+   "end": 69.3333,
+   "f0": 1840,
+   "f1": 2080,
+   "t": "20 Hz \u2013 20 kHz",
+   "e": "20 kHz",
+   "h": "Twenty hertz to twenty kilohertz.",
+   "x": "A balanced response in every pattern, and more neutral voicing than the TLM 103.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 10,
+   "start": 69.3333,
+   "end": 77.3333,
+   "f0": 2080,
+   "f1": 2320,
+   "t": "141 dB SPL",
+   "e": "141",
+   "h": "One hundred forty-one decibels.",
+   "x": "Maximum SPL for kick drums, brass and screaming vocals, and one fifty-three with the two-stage pad.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 11,
+   "start": 77.3333,
+   "end": 82.6667,
+   "f0": 2320,
+   "f1": 2480,
+   "t": "131 dB RANGE",
+   "e": "131",
+   "h": "One thirty-one dB range.",
+   "x": "From a whisper to a snare hit, without strain.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 12,
+   "start": 82.6667,
+   "end": 88.0,
+   "f0": 2480,
+   "f1": 2640,
+   "t": "LOW CUT \u00b7 40 \u00b7 100 Hz",
+   "e": "LOW CUT",
+   "h": "Two low-cut filters.",
+   "x": "Forty hertz kills rumble. One hundred is made for voice.",
+   "ch": 1,
+   "end_screen": false
+  },
+  {
+   "i": 13,
+   "start": 88.0,
+   "end": 93.3333,
+   "f0": 2640,
+   "f1": 2800,
+   "t": "NOW WATCH THIS",
+   "e": "WATCH",
+   "h": "Now watch this.",
+   "x": "One microphone becomes five, with one press of a switch.",
+   "ch": 2,
+   "end_screen": false
+  },
+  {
+   "i": 14,
+   "start": 93.3333,
+   "end": 98.6667,
+   "f0": 2800,
+   "f1": 2960,
+   "t": "OMNI",
+   "e": "OMNI",
+   "h": "Omni.",
+   "x": "Every direction at once. The whole room, the choir and the ambience.",
+   "ch": 2,
+   "end_screen": false
+  },
+  {
+   "i": 15,
+   "start": 98.6667,
+   "end": 104.0,
+   "f0": 2960,
+   "f1": 3120,
+   "t": "CARDIOID",
+   "e": "CARDIOID",
+   "h": "Cardioid.",
+   "x": "Focused forward, rejecting what's behind it. The classic choice for lead vocals.",
+   "ch": 2,
+   "end_screen": false
+  },
+  {
+   "i": 16,
+   "start": 104.0,
+   "end": 109.3333,
+   "f0": 3120,
+   "f1": 3280,
+   "t": "FIGURE-8",
+   "e": "FIGURE-8",
+   "h": "Figure-eight.",
+   "x": "Front and back, deaf at the sides. Duets, interviews, and mid-side stereo.",
+   "ch": 2,
+   "end_screen": false
+  },
+  {
+   "i": 17,
+   "start": 109.3333,
+   "end": 114.6667,
+   "f0": 3280,
+   "f1": 3440,
+   "t": "WIDE & HYPER",
+   "e": "HYPER",
+   "h": "Wide cardioid and hypercardioid.",
+   "x": "The in-between patterns, for the pickup your room needs.",
+   "ch": 2,
+   "end_screen": false
+  },
+  {
+   "i": 18,
+   "start": 114.6667,
+   "end": 122.6667,
+   "f0": 3440,
+   "f1": 3680,
+   "t": "ON VOCALS",
+   "e": "VOCALS",
+   "h": "On vocals.",
+   "x": "Intimate, detailed and honest, without the hype of a coloured mic, and the hundred-hertz filter keeps it clean.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 19,
+   "start": 122.6667,
+   "end": 128.0,
+   "f0": 3680,
+   "f1": 3840,
+   "t": "ACOUSTIC GUITAR",
+   "e": "GUITAR",
+   "h": "On acoustic guitar.",
+   "x": "Every string, pick attack, body and air, in natural balance.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 20,
+   "start": 128.0,
+   "end": 133.3333,
+   "f0": 3840,
+   "f1": 4000,
+   "t": "DRUMS & PERCUSSION",
+   "e": "DRUMS",
+   "h": "On drums and percussion.",
+   "x": "Congas, kick and overheads, all with headroom to spare.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 21,
+   "start": 133.3333,
+   "end": 138.6667,
+   "f0": 4000,
+   "f1": 4160,
+   "t": "THE ORCHESTRA",
+   "e": "ORCHESTRA",
+   "h": "On the orchestra.",
+   "x": "Switch to omni or figure-eight and capture the whole hall.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 22,
+   "start": 138.6667,
+   "end": 146.6667,
+   "f0": 4160,
+   "f1": 4400,
+   "t": "PODCAST & VOICE-OVER",
+   "e": "PODCAST",
+   "h": "On podcasts and voice-over.",
+   "x": "Clear, close speech with self-noise far below the room, in a home studio or broadcast booth.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 23,
+   "start": 146.6667,
+   "end": 154.6667,
+   "f0": 4400,
+   "f1": 4640,
+   "t": "THE STUDIO SET",
+   "e": "STUDIO SET",
+   "h": "The Studio Set.",
+   "x": "The TLM 107 with the EA 4 elastic mount against stand-borne noise, delivered in a wooden case.",
+   "ch": 3,
+   "end_screen": false
+  },
+  {
+   "i": 24,
+   "start": 154.6667,
+   "end": 162.6667,
+   "f0": 4640,
+   "f1": 4880,
+   "t": "AWARD-WINNING",
+   "e": "AWARD-WINNING",
+   "h": "Award-winning.",
+   "x": "Best of Show at AES twenty-thirteen, a TEC Award in twenty-fourteen, from a Berlin name trusted since nineteen twenty-eight.",
+   "ch": 4,
+   "end_screen": false
+  },
+  {
+   "i": 25,
+   "start": 162.6667,
+   "end": 168.0,
+   "f0": 4880,
+   "f1": 5040,
+   "t": "COMPLETE THE CHAIN",
+   "e": "CHAIN",
+   "h": "Complete the chain.",
+   "x": "Pair it with Neumann monitors and headphones, capsule to speaker.",
+   "ch": 4,
+   "end_screen": false
+  },
+  {
+   "i": 26,
+   "start": 168.0,
+   "end": 174.0,
+   "f0": 5040,
+   "f1": 5220,
+   "t": "WHICH ONE IS YOURS?",
+   "e": "YOURS?",
+   "h": "Which one is yours?",
+   "x": "Comment nickel or black below, then hear it for yourself.",
+   "ch": 4,
+   "end_screen": false
+  },
+  {
+   "i": 27,
+   "start": 174.0,
+   "end": 180.0,
+   "f0": 5220,
+   "f1": 5400,
+   "t": "",
+   "e": "",
+   "h": "",
+   "x": "Shivansh Electronics is the Exclusive Partner of the Neumann TLM 107 Studio Set. Follow us.",
+   "ch": 4,
+   "end_screen": true
+  }
+ ],
+ "shots": [
+  {
+   "i": 0,
+   "w": 0,
+   "kind": "z",
+   "subject": "hook",
+   "opt": null,
+   "start": 0.0,
+   "end": 2.0,
+   "f0": 0,
+   "f1": 60,
+   "move": "none",
+   "trans": "fadeIn",
+   "tf": 24,
+   "section": "verse",
+   "firstInWindow": true
+  },
+  {
+   "i": 1,
+   "w": 1,
+   "kind": "v",
+   "subject": "domeLeds",
+   "opt": null,
+   "start": 2.0,
+   "end": 4.6667,
+   "f0": 60,
+   "f1": 140,
+   "move": "pushIn",
+   "trans": "rack",
+   "tf": 18,
+   "section": "verse",
+   "firstInWindow": true,
+   "src": 19.0,
+   "rate": 1.3404,
+   "masterFrom": 18.04
+  },
+  {
+   "i": 2,
+   "w": 1,
+   "kind": "z",
+   "subject": "noisefloor",
+   "opt": null,
+   "start": 4.6667,
+   "end": 8.0,
+   "f0": 140,
+   "f1": 240,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "break",
+   "firstInWindow": false
+  },
+  {
+   "i": 3,
+   "w": 2,
+   "kind": "c",
+   "subject": "black_front",
+   "opt": "reveal",
+   "start": 8.0,
+   "end": 9.3333,
+   "f0": 240,
+   "f1": 280,
+   "move": "heroReveal",
+   "trans": "flashIris",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 4,
+   "w": 2,
+   "kind": "v",
+   "subject": "xrayRot",
+   "opt": null,
+   "start": 9.3333,
+   "end": 10.6667,
+   "f0": 280,
+   "f1": 320,
+   "move": "gimbalL",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false,
+   "src": 24.2,
+   "rate": 1.35,
+   "masterFrom": 23.24
+  },
+  {
+   "i": 5,
+   "w": 2,
+   "kind": "c",
+   "subject": "nickel_front",
+   "opt": null,
+   "start": 10.6667,
+   "end": 12.0,
+   "f0": 320,
+   "f1": 360,
+   "move": "orbitR",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 6,
+   "w": 2,
+   "kind": "i",
+   "subject": "grille_badge_dark",
+   "opt": null,
+   "start": 12.0,
+   "end": 13.3333,
+   "f0": 360,
+   "f1": 400,
+   "move": "craneUp",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 7,
+   "w": 2,
+   "kind": "v",
+   "subject": "domeLeds",
+   "opt": null,
+   "start": 13.3333,
+   "end": 14.6667,
+   "f0": 400,
+   "f1": 440,
+   "move": "focusIn",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": false,
+   "src": 20.094,
+   "rate": 1.35,
+   "masterFrom": 19.1339
+  },
+  {
+   "i": 8,
+   "w": 2,
+   "kind": "c",
+   "subject": "nickel_front_tall",
+   "opt": null,
+   "start": 14.6667,
+   "end": 16.0,
+   "f0": 440,
+   "f1": 480,
+   "move": "craneUp",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 9,
+   "w": 3,
+   "kind": "v",
+   "subject": "polarRings",
+   "opt": null,
+   "start": 16.0,
+   "end": 18.6667,
+   "f0": 480,
+   "f1": 560,
+   "move": "pullOut",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 60.6,
+   "rate": 1.35,
+   "masterFrom": 59.64
+  },
+  {
+   "i": 10,
+   "w": 3,
+   "kind": "z",
+   "subject": "polar5",
+   "opt": null,
+   "start": 18.6667,
+   "end": 24.0,
+   "f0": 560,
+   "f1": 720,
+   "move": "none",
+   "trans": "ring",
+   "tf": 18,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 11,
+   "w": 4,
+   "kind": "v",
+   "subject": "navSwitch",
+   "opt": null,
+   "start": 24.0,
+   "end": 25.3333,
+   "f0": 720,
+   "f1": 760,
+   "move": "gimbalR",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 35.72,
+   "rate": 1.35,
+   "masterFrom": 34.76
+  },
+  {
+   "i": 12,
+   "w": 4,
+   "kind": "i",
+   "subject": "black_ring_macro",
+   "opt": null,
+   "start": 25.3333,
+   "end": 26.0,
+   "f0": 760,
+   "f1": 780,
+   "move": "zoomOut",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 13,
+   "w": 4,
+   "kind": "i",
+   "subject": "nickel_ring_macro",
+   "opt": null,
+   "start": 26.0,
+   "end": 26.6667,
+   "f0": 780,
+   "f1": 800,
+   "move": "dutch",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 14,
+   "w": 4,
+   "kind": "z",
+   "subject": "switch",
+   "opt": "patterns",
+   "start": 26.6667,
+   "end": 32.0,
+   "f0": 800,
+   "f1": 960,
+   "move": "none",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 15,
+   "w": 5,
+   "kind": "v",
+   "subject": "badges",
+   "opt": null,
+   "start": 32.0,
+   "end": 33.3333,
+   "f0": 960,
+   "f1": 1000,
+   "move": "floatUp",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 42.96,
+   "rate": 1.35,
+   "masterFrom": 42.0
+  },
+  {
+   "i": 16,
+   "w": 5,
+   "kind": "c",
+   "subject": "nickel_ea4",
+   "opt": null,
+   "start": 33.3333,
+   "end": 34.6667,
+   "f0": 1000,
+   "f1": 1040,
+   "move": "gimbalL",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 17,
+   "w": 5,
+   "kind": "c",
+   "subject": "black_ea4",
+   "opt": null,
+   "start": 34.6667,
+   "end": 36.0,
+   "f0": 1040,
+   "f1": 1080,
+   "move": "focusIn",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 18,
+   "w": 5,
+   "kind": "i",
+   "subject": "black_ea4_brand",
+   "opt": null,
+   "start": 36.0,
+   "end": 37.3333,
+   "f0": 1080,
+   "f1": 1120,
+   "move": "focusOut",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 19,
+   "w": 5,
+   "kind": "c",
+   "subject": "nickel_ea4_b",
+   "opt": null,
+   "start": 37.3333,
+   "end": 38.6667,
+   "f0": 1120,
+   "f1": 1160,
+   "move": "orbitL",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 20,
+   "w": 5,
+   "kind": "c",
+   "subject": "black_xlr_angle",
+   "opt": null,
+   "start": 38.6667,
+   "end": 40.0,
+   "f0": 1160,
+   "f1": 1200,
+   "move": "heroRise",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 21,
+   "w": 6,
+   "kind": "v",
+   "subject": "grilleGlint",
+   "opt": null,
+   "start": 40.0,
+   "end": 42.0,
+   "f0": 1200,
+   "f1": 1260,
+   "move": "pushIn",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 46.16,
+   "rate": 0.7941,
+   "masterFrom": 45.2
+  },
+  {
+   "i": 22,
+   "w": 6,
+   "kind": "i",
+   "subject": "black_leds_macro",
+   "opt": null,
+   "start": 42.0,
+   "end": 43.3333,
+   "f0": 1260,
+   "f1": 1300,
+   "move": "craneDown",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 23,
+   "w": 6,
+   "kind": "v",
+   "subject": "xrayFront",
+   "opt": null,
+   "start": 43.3333,
+   "end": 45.3333,
+   "f0": 1300,
+   "f1": 1360,
+   "move": "gimbalL",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false,
+   "src": 56.9,
+   "rate": 1.35,
+   "masterFrom": 55.94
+  },
+  {
+   "i": 24,
+   "w": 7,
+   "kind": "v",
+   "subject": "pcb",
+   "opt": null,
+   "start": 45.3333,
+   "end": 48.0,
+   "f0": 1360,
+   "f1": 1440,
+   "move": "focusIn",
+   "trans": "sweep",
+   "tf": 16,
+   "section": "breakdown",
+   "firstInWindow": true,
+   "src": 50.64,
+   "rate": 0.7277,
+   "masterFrom": 49.68
+  },
+  {
+   "i": 25,
+   "w": 7,
+   "kind": "z",
+   "subject": "signal",
+   "opt": null,
+   "start": 48.0,
+   "end": 53.3333,
+   "f0": 1440,
+   "f1": 1600,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "breakdown",
+   "firstInWindow": false
+  },
+  {
+   "i": 26,
+   "w": 8,
+   "kind": "v",
+   "subject": "capsule",
+   "opt": null,
+   "start": 53.3333,
+   "end": 56.0,
+   "f0": 1600,
+   "f1": 1680,
+   "move": "pullOut",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": true,
+   "src": 48.12,
+   "rate": 0.7224,
+   "masterFrom": 47.16
+  },
+  {
+   "i": 27,
+   "w": 8,
+   "kind": "z",
+   "subject": "capsule",
+   "opt": null,
+   "start": 56.0,
+   "end": 58.6666,
+   "f0": 1680,
+   "f1": 1760,
+   "move": "none",
+   "trans": "ring",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": false
+  },
+  {
+   "i": 28,
+   "w": 8,
+   "kind": "v",
+   "subject": "xrayRot",
+   "opt": null,
+   "start": 58.6666,
+   "end": 61.3333,
+   "f0": 1760,
+   "f1": 1840,
+   "move": "gimbalR",
+   "trans": "rack",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": false,
+   "src": 24.249,
+   "rate": 1.35,
+   "masterFrom": 23.2894
+  },
+  {
+   "i": 29,
+   "w": 9,
+   "kind": "v",
+   "subject": "freq",
+   "opt": null,
+   "start": 61.3333,
+   "end": 64.0,
+   "f0": 1840,
+   "f1": 1920,
+   "move": "floatUp",
+   "trans": "sweep",
+   "tf": 16,
+   "section": "breakdown",
+   "firstInWindow": true,
+   "src": 53.08,
+   "rate": 1.0469,
+   "masterFrom": 52.12
+  },
+  {
+   "i": 30,
+   "w": 9,
+   "kind": "z",
+   "subject": "freq",
+   "opt": null,
+   "start": 64.0,
+   "end": 69.3333,
+   "f0": 1920,
+   "f1": 2080,
+   "move": "none",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": false
+  },
+  {
+   "i": 31,
+   "w": 10,
+   "kind": "z",
+   "subject": "spl",
+   "opt": "pad",
+   "start": 69.3333,
+   "end": 77.3333,
+   "f0": 2080,
+   "f1": 2320,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "breakdown",
+   "firstInWindow": true
+  },
+  {
+   "i": 32,
+   "w": 11,
+   "kind": "z",
+   "subject": "range",
+   "opt": null,
+   "start": 77.3333,
+   "end": 82.6667,
+   "f0": 2320,
+   "f1": 2480,
+   "move": "none",
+   "trans": "ring",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": true
+  },
+  {
+   "i": 33,
+   "w": 12,
+   "kind": "z",
+   "subject": "lowcut",
+   "opt": null,
+   "start": 82.6667,
+   "end": 88.0,
+   "f0": 2480,
+   "f1": 2640,
+   "move": "none",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "breakdown",
+   "firstInWindow": true
+  },
+  {
+   "i": 34,
+   "w": 13,
+   "kind": "v",
+   "subject": "xrayFront",
+   "opt": null,
+   "start": 88.0,
+   "end": 90.6667,
+   "f0": 2640,
+   "f1": 2720,
+   "move": "pushIn",
+   "trans": "ring",
+   "tf": 18,
+   "section": "build",
+   "firstInWindow": true,
+   "src": 56.9,
+   "rate": 1.2333,
+   "masterFrom": 55.94
+  },
+  {
+   "i": 35,
+   "w": 13,
+   "kind": "v",
+   "subject": "polarRings",
+   "opt": null,
+   "start": 90.6667,
+   "end": 93.3333,
+   "f0": 2720,
+   "f1": 2800,
+   "move": "gimbalL",
+   "trans": "whip",
+   "tf": 10,
+   "section": "build",
+   "firstInWindow": false,
+   "src": 62.497,
+   "rate": 1.35,
+   "masterFrom": 61.5374
+  },
+  {
+   "i": 36,
+   "w": 14,
+   "kind": "z",
+   "subject": "polar",
+   "opt": "omni",
+   "start": 93.3333,
+   "end": 98.6667,
+   "f0": 2800,
+   "f1": 2960,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "build",
+   "firstInWindow": true
+  },
+  {
+   "i": 37,
+   "w": 15,
+   "kind": "z",
+   "subject": "polar",
+   "opt": "cardioid",
+   "start": 98.6667,
+   "end": 104.0,
+   "f0": 2960,
+   "f1": 3120,
+   "move": "none",
+   "trans": "ring",
+   "tf": 18,
+   "section": "build",
+   "firstInWindow": true
+  },
+  {
+   "i": 38,
+   "w": 16,
+   "kind": "z",
+   "subject": "polar",
+   "opt": "fig8",
+   "start": 104.0,
+   "end": 109.3333,
+   "f0": 3120,
+   "f1": 3280,
+   "move": "none",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "build",
+   "firstInWindow": true
+  },
+  {
+   "i": 39,
+   "w": 17,
+   "kind": "z",
+   "subject": "polar",
+   "opt": "widehyper",
+   "start": 109.3333,
+   "end": 114.6667,
+   "f0": 3280,
+   "f1": 3440,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "build",
+   "firstInWindow": true
+  },
+  {
+   "i": 40,
+   "w": 18,
+   "kind": "c",
+   "subject": "nickel_ea4_stand",
+   "opt": "reveal",
+   "start": 114.6667,
+   "end": 116.0,
+   "f0": 3440,
+   "f1": 3480,
+   "move": "heroReveal",
+   "trans": "flashIris",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 41,
+   "w": 18,
+   "kind": "i",
+   "subject": "nickel_purple",
+   "opt": null,
+   "start": 116.0,
+   "end": 117.3334,
+   "f0": 3480,
+   "f1": 3520,
+   "move": "pushTilt",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 42,
+   "w": 18,
+   "kind": "i",
+   "subject": "nickel_console",
+   "opt": null,
+   "start": 117.3334,
+   "end": 118.6667,
+   "f0": 3520,
+   "f1": 3560,
+   "move": "gimbalL",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 43,
+   "w": 18,
+   "kind": "c",
+   "subject": "nickel_stand",
+   "opt": null,
+   "start": 118.6667,
+   "end": 120.0,
+   "f0": 3560,
+   "f1": 3600,
+   "move": "zoomIn",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 44,
+   "w": 18,
+   "kind": "c",
+   "subject": "nickel_clip_angle",
+   "opt": null,
+   "start": 120.0,
+   "end": 121.3334,
+   "f0": 3600,
+   "f1": 3640,
+   "move": "orbitR",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 45,
+   "w": 18,
+   "kind": "c",
+   "subject": "white_ea4",
+   "opt": null,
+   "start": 121.3334,
+   "end": 122.6667,
+   "f0": 3640,
+   "f1": 3680,
+   "move": "craneUp",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 46,
+   "w": 19,
+   "kind": "v",
+   "subject": "guitar",
+   "opt": null,
+   "start": 122.6667,
+   "end": 124.0,
+   "f0": 3680,
+   "f1": 3720,
+   "move": "focusIn",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 68.48,
+   "rate": 0.925,
+   "masterFrom": 67.52
+  },
+  {
+   "i": 47,
+   "w": 19,
+   "kind": "i",
+   "subject": "grille_abstract",
+   "opt": null,
+   "start": 124.0,
+   "end": 125.3334,
+   "f0": 3720,
+   "f1": 3760,
+   "move": "zoomIn",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 48,
+   "w": 19,
+   "kind": "i",
+   "subject": "badge_black_macro",
+   "opt": null,
+   "start": 125.3334,
+   "end": 126.6667,
+   "f0": 3760,
+   "f1": 3800,
+   "move": "focusIn",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 49,
+   "w": 19,
+   "kind": "i",
+   "subject": "nickel_xlr_macro",
+   "opt": null,
+   "start": 126.6667,
+   "end": 128.0,
+   "f0": 3800,
+   "f1": 3840,
+   "move": "gimbalR",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 50,
+   "w": 20,
+   "kind": "v",
+   "subject": "congas",
+   "opt": null,
+   "start": 128.0,
+   "end": 129.3333,
+   "f0": 3840,
+   "f1": 3880,
+   "move": "pullOut",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 70.28,
+   "rate": 0.8222,
+   "masterFrom": 69.32
+  },
+  {
+   "i": 51,
+   "w": 20,
+   "kind": "i",
+   "subject": "badge_black_macro2",
+   "opt": null,
+   "start": 129.3333,
+   "end": 130.6667,
+   "f0": 3880,
+   "f1": 3920,
+   "move": "craneUp",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 52,
+   "w": 20,
+   "kind": "i",
+   "subject": "grille_badge_dark2",
+   "opt": null,
+   "start": 130.6667,
+   "end": 132.0,
+   "f0": 3920,
+   "f1": 3960,
+   "move": "zoomOut",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 53,
+   "w": 20,
+   "kind": "i",
+   "subject": "badge_black_macro2",
+   "opt": null,
+   "start": 132.0,
+   "end": 133.3333,
+   "f0": 3960,
+   "f1": 4000,
+   "move": "dutch",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 54,
+   "w": 21,
+   "kind": "v",
+   "subject": "orchestra",
+   "opt": null,
+   "start": 133.3333,
+   "end": 134.6666,
+   "f0": 4000,
+   "f1": 4040,
+   "move": "gimbalR",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 73.84,
+   "rate": 1.0,
+   "masterFrom": 72.88
+  },
+  {
+   "i": 55,
+   "w": 21,
+   "kind": "i",
+   "subject": "nickel_grille_macro",
+   "opt": null,
+   "start": 134.6666,
+   "end": 135.3333,
+   "f0": 4040,
+   "f1": 4060,
+   "move": "focusOut",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 56,
+   "w": 21,
+   "kind": "v",
+   "subject": "console",
+   "opt": null,
+   "start": 135.3333,
+   "end": 136.6666,
+   "f0": 4060,
+   "f1": 4100,
+   "move": "floatUp",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false,
+   "src": 72.08,
+   "rate": 0.8444,
+   "masterFrom": 71.12
+  },
+  {
+   "i": 57,
+   "w": 21,
+   "kind": "i",
+   "subject": "black_leds_macro2",
+   "opt": null,
+   "start": 136.6666,
+   "end": 137.3333,
+   "f0": 4100,
+   "f1": 4120,
+   "move": "craneDown",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 58,
+   "w": 21,
+   "kind": "i",
+   "subject": "polar_chart",
+   "opt": null,
+   "start": 137.3333,
+   "end": 138.6667,
+   "f0": 4120,
+   "f1": 4160,
+   "move": "pushTilt",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 59,
+   "w": 22,
+   "kind": "m",
+   "subject": "homestudio",
+   "opt": null,
+   "start": 138.6667,
+   "end": 141.3334,
+   "f0": 4160,
+   "f1": 4240,
+   "move": "drift",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 60,
+   "w": 22,
+   "kind": "c",
+   "subject": "black_front_tall",
+   "opt": null,
+   "start": 141.3334,
+   "end": 144.0,
+   "f0": 4240,
+   "f1": 4320,
+   "move": "gimbalL",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 61,
+   "w": 22,
+   "kind": "c",
+   "subject": "black_ea4_stand",
+   "opt": null,
+   "start": 144.0,
+   "end": 146.6667,
+   "f0": 4320,
+   "f1": 4400,
+   "move": "focusIn",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 62,
+   "w": 23,
+   "kind": "c",
+   "subject": "mount_black",
+   "opt": null,
+   "start": 146.6667,
+   "end": 148.0,
+   "f0": 4400,
+   "f1": 4440,
+   "move": "orbitL",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 63,
+   "w": 23,
+   "kind": "c",
+   "subject": "mount_nickel",
+   "opt": null,
+   "start": 148.0,
+   "end": 149.3334,
+   "f0": 4440,
+   "f1": 4480,
+   "move": "heroRise",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 64,
+   "w": 23,
+   "kind": "c",
+   "subject": "mount_nickel_parts",
+   "opt": null,
+   "start": 149.3334,
+   "end": 150.6667,
+   "f0": 4480,
+   "f1": 4520,
+   "move": "gimbalR",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 65,
+   "w": 23,
+   "kind": "c",
+   "subject": "cream_ea4",
+   "opt": null,
+   "start": 150.6667,
+   "end": 152.0,
+   "f0": 4520,
+   "f1": 4560,
+   "move": "zoomIn",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 66,
+   "w": 23,
+   "kind": "c",
+   "subject": "box_open_black",
+   "opt": null,
+   "start": 152.0,
+   "end": 153.3334,
+   "f0": 4560,
+   "f1": 4600,
+   "move": "orbitR",
+   "trans": "zoomThru",
+   "tf": 12,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 67,
+   "w": 23,
+   "kind": "c",
+   "subject": "box_closed",
+   "opt": null,
+   "start": 153.3334,
+   "end": 154.0,
+   "f0": 4600,
+   "f1": 4620,
+   "move": "craneUp",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 68,
+   "w": 23,
+   "kind": "i",
+   "subject": "box_trio",
+   "opt": null,
+   "start": 154.0,
+   "end": 154.6667,
+   "f0": 4620,
+   "f1": 4640,
+   "move": "gimbalL",
+   "trans": "whipR",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 69,
+   "w": 24,
+   "kind": "z",
+   "subject": "awards",
+   "opt": null,
+   "start": 154.6667,
+   "end": 160.0,
+   "f0": 4640,
+   "f1": 4800,
+   "move": "none",
+   "trans": "ring",
+   "tf": 18,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 70,
+   "w": 24,
+   "kind": "i",
+   "subject": "heritage_vintage",
+   "opt": null,
+   "start": 160.0,
+   "end": 161.3334,
+   "f0": 4800,
+   "f1": 4840,
+   "move": "zoomIn",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 71,
+   "w": 24,
+   "kind": "c",
+   "subject": "u87_eco",
+   "opt": null,
+   "start": 161.3334,
+   "end": 162.6667,
+   "f0": 4840,
+   "f1": 4880,
+   "move": "gimbalL",
+   "trans": "shutter",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 72,
+   "w": 25,
+   "kind": "z",
+   "subject": "ecosystem",
+   "opt": null,
+   "start": 162.6667,
+   "end": 168.0,
+   "f0": 4880,
+   "f1": 5040,
+   "move": "none",
+   "trans": "mesh",
+   "tf": 18,
+   "section": "drop",
+   "firstInWindow": true
+  },
+  {
+   "i": 73,
+   "w": 26,
+   "kind": "v",
+   "subject": "pair",
+   "opt": null,
+   "start": 168.0,
+   "end": 170.0,
+   "f0": 5040,
+   "f1": 5100,
+   "move": "pushIn",
+   "trans": "punch",
+   "tf": 8,
+   "section": "drop",
+   "firstInWindow": true,
+   "src": 82.0,
+   "rate": 0.8143,
+   "masterFrom": 81.04
+  },
+  {
+   "i": 74,
+   "w": 26,
+   "kind": "c",
+   "subject": "nickel_front_tall",
+   "opt": null,
+   "start": 170.0,
+   "end": 172.0,
+   "f0": 5100,
+   "f1": 5160,
+   "move": "focusIn",
+   "trans": "whip",
+   "tf": 10,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 75,
+   "w": 26,
+   "kind": "c",
+   "subject": "black_front",
+   "opt": null,
+   "start": 172.0,
+   "end": 174.0,
+   "f0": 5160,
+   "f1": 5220,
+   "move": "orbitL",
+   "trans": "slats",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": false
+  },
+  {
+   "i": 76,
+   "w": 27,
+   "kind": "z",
+   "subject": "outro",
+   "opt": null,
+   "start": 174.0,
+   "end": 180.0,
+   "f0": 5220,
+   "f1": 5400,
+   "move": "none",
+   "trans": "iris",
+   "tf": 14,
+   "section": "drop",
+   "firstInWindow": true
+  }
+ ],
+ "sfx": [
+  {
+   "at": 0.0,
+   "cue": "bloom",
+   "gain": 0.0,
+   "why": "trans:fadeIn"
+  },
+  {
+   "at": 0.0,
+   "cue": "blip0",
+   "gain": -2.0,
+   "why": "viz:hook"
+  },
+  {
+   "at": 0.3333,
+   "cue": "blip1",
+   "gain": -2.0,
+   "why": "viz:hook"
+  },
+  {
+   "at": 0.6667,
+   "cue": "blip2",
+   "gain": -2.0,
+   "why": "viz:hook"
+  },
+  {
+   "at": 1.0,
+   "cue": "blip3",
+   "gain": -2.0,
+   "why": "viz:hook"
+  },
+  {
+   "at": 1.3333,
+   "cue": "blip4",
+   "gain": -2.0,
+   "why": "viz:hook"
+  },
+  {
+   "at": 2.0,
+   "cue": "swell",
+   "gain": 0.0,
+   "why": "trans:rack"
+  },
+  {
+   "at": 4.6667,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 5.3333,
+   "cue": "air-down",
+   "gain": -2.0,
+   "why": "viz:noisefloor"
+  },
+  {
+   "at": 5.3333,
+   "cue": "riser",
+   "gain": -1.0,
+   "why": "pre-drop"
+  },
+  {
+   "at": 8.0,
+   "cue": "impact-big",
+   "gain": 0.0,
+   "why": "trans:flashIris"
+  },
+  {
+   "at": 8.0,
+   "cue": "sub-drop",
+   "gain": 0.0,
+   "why": "drop"
+  },
+  {
+   "at": 9.3333,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 10.6667,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 12.0,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 13.3333,
+   "cue": "air-punch",
+   "gain": -3.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 14.6667,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 16.0,
+   "cue": "whoosh",
+   "gain": 0.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 18.6667,
+   "cue": "ring",
+   "gain": -3.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 19.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:polar5"
+  },
+  {
+   "at": 19.9333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:polar5"
+  },
+  {
+   "at": 20.8667,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:polar5"
+  },
+  {
+   "at": 21.8,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:polar5"
+  },
+  {
+   "at": 22.7333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:polar5"
+  },
+  {
+   "at": 24.0,
+   "cue": "impact",
+   "gain": 0.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 25.3333,
+   "cue": "shutter",
+   "gain": -3.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 26.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 26.6667,
+   "cue": "grain",
+   "gain": -3.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 27.3333,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:switch:patterns"
+  },
+  {
+   "at": 28.0,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:switch:patterns"
+  },
+  {
+   "at": 28.6667,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:switch:patterns"
+  },
+  {
+   "at": 29.3333,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:switch:patterns"
+  },
+  {
+   "at": 30.0,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:switch:patterns"
+  },
+  {
+   "at": 32.0,
+   "cue": "whoosh",
+   "gain": 0.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 33.3333,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 34.6667,
+   "cue": "air-punch",
+   "gain": -3.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 36.0,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 37.3333,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 38.6667,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 40.0,
+   "cue": "shutter",
+   "gain": 0.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 42.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 43.3333,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 45.3333,
+   "cue": "glint",
+   "gain": 0.0,
+   "why": "trans:sweep"
+  },
+  {
+   "at": 48.0,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 48.6666,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:signal"
+  },
+  {
+   "at": 50.0,
+   "cue": "cross",
+   "gain": -2.0,
+   "why": "viz:signal"
+  },
+  {
+   "at": 53.3333,
+   "cue": "grain",
+   "gain": 0.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 56.0,
+   "cue": "ring",
+   "gain": -3.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 56.6666,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:capsule"
+  },
+  {
+   "at": 57.3333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:capsule"
+  },
+  {
+   "at": 58.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:capsule"
+  },
+  {
+   "at": 58.6666,
+   "cue": "swell",
+   "gain": -3.0,
+   "why": "trans:rack"
+  },
+  {
+   "at": 61.3333,
+   "cue": "glint",
+   "gain": 0.0,
+   "why": "trans:sweep"
+  },
+  {
+   "at": 64.0,
+   "cue": "grain",
+   "gain": -3.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 64.3333,
+   "cue": "chirp",
+   "gain": -2.0,
+   "why": "viz:freq"
+  },
+  {
+   "at": 69.3333,
+   "cue": "shimmer",
+   "gain": 0.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 69.5,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 69.6666,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 69.8333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.1666,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.3333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.5,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.6666,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 70.8333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 71.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 71.3333,
+   "cue": "lock",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 72.6666,
+   "cue": "lock",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 74.0,
+   "cue": "lock",
+   "gain": -2.0,
+   "why": "viz:spl:pad"
+  },
+  {
+   "at": 77.3333,
+   "cue": "ring",
+   "gain": 0.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 78.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:range"
+  },
+  {
+   "at": 79.3333,
+   "cue": "lock",
+   "gain": -2.0,
+   "why": "viz:range"
+  },
+  {
+   "at": 82.6667,
+   "cue": "grain",
+   "gain": 0.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 84.0,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:lowcut"
+  },
+  {
+   "at": 86.0,
+   "cue": "click",
+   "gain": -2.0,
+   "why": "viz:lowcut"
+  },
+  {
+   "at": 88.0,
+   "cue": "ring",
+   "gain": 0.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 90.6667,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 93.3333,
+   "cue": "shimmer",
+   "gain": 0.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 98.6667,
+   "cue": "ring",
+   "gain": 0.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 104.0,
+   "cue": "grain",
+   "gain": 0.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 109.3333,
+   "cue": "shimmer",
+   "gain": 0.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 112.0,
+   "cue": "riser",
+   "gain": -1.0,
+   "why": "pre-drop"
+  },
+  {
+   "at": 114.6667,
+   "cue": "impact-big",
+   "gain": 0.0,
+   "why": "trans:flashIris"
+  },
+  {
+   "at": 114.6667,
+   "cue": "sub-drop",
+   "gain": 0.0,
+   "why": "drop"
+  },
+  {
+   "at": 116.0,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 117.3334,
+   "cue": "air-punch",
+   "gain": -3.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 118.6667,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 120.0,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 121.3334,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 122.6667,
+   "cue": "shutter",
+   "gain": 0.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 124.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 125.3334,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 126.6667,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 128.0,
+   "cue": "air-punch",
+   "gain": 0.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 129.3333,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 130.6667,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 132.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 133.3333,
+   "cue": "shutter",
+   "gain": 0.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 134.6666,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 135.3333,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 136.6666,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 137.3333,
+   "cue": "air-punch",
+   "gain": -3.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 138.6667,
+   "cue": "shimmer",
+   "gain": 0.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 141.3334,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 144.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 146.6667,
+   "cue": "shutter",
+   "gain": 0.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 148.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 149.3334,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 150.6667,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 152.0,
+   "cue": "air-punch",
+   "gain": -3.0,
+   "why": "trans:zoomThru"
+  },
+  {
+   "at": 153.3334,
+   "cue": "shimmer",
+   "gain": -3.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 154.0,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whipR"
+  },
+  {
+   "at": 154.6667,
+   "cue": "ring",
+   "gain": 0.0,
+   "why": "trans:ring"
+  },
+  {
+   "at": 155.3334,
+   "cue": "chime",
+   "gain": -2.0,
+   "why": "viz:awards"
+  },
+  {
+   "at": 156.6667,
+   "cue": "chime",
+   "gain": -2.0,
+   "why": "viz:awards"
+  },
+  {
+   "at": 160.0,
+   "cue": "impact",
+   "gain": -3.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 161.3334,
+   "cue": "shutter",
+   "gain": -3.0,
+   "why": "trans:shutter"
+  },
+  {
+   "at": 162.6667,
+   "cue": "grain",
+   "gain": 0.0,
+   "why": "trans:mesh"
+  },
+  {
+   "at": 162.6667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 163.1667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 163.6667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 164.1667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 164.6667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 165.1667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 165.6667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 166.1667,
+   "cue": "drop",
+   "gain": -2.0,
+   "why": "viz:ecosystem"
+  },
+  {
+   "at": 168.0,
+   "cue": "impact",
+   "gain": 0.0,
+   "why": "trans:punch"
+  },
+  {
+   "at": 170.0,
+   "cue": "whoosh",
+   "gain": -3.0,
+   "why": "trans:whip"
+  },
+  {
+   "at": 172.0,
+   "cue": "ticks",
+   "gain": -3.0,
+   "why": "trans:slats"
+  },
+  {
+   "at": 174.0,
+   "cue": "shimmer",
+   "gain": 0.0,
+   "why": "trans:iris"
+  },
+  {
+   "at": 174.0,
+   "cue": "impact-soft",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 174.6667,
+   "cue": "bloom",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 175.3333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 176.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 176.6667,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 177.3333,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:outro"
+  },
+  {
+   "at": 178.0,
+   "cue": "tick",
+   "gain": -2.0,
+   "why": "viz:outro"
+  }
+ ],
+ "audio": {
+  "blocks": [
+   {
+    "out": 0.0,
+    "a": 41.4,
+    "b": 221.4
+   }
+  ],
+  "duration": 180.0
+ }
+}

@@ -1,0 +1,7 @@
+node_modules/
+out/
+# large generated media: the master clip is rebuilt by upvideo; audio masters and
+# stems are delivered in ../deliverables/
+public/clips/
+audio/
+*.tmp.mp4
