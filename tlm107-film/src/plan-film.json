@@ -2517,7 +2517,7 @@
    "i": 106,
    "w": 49,
    "kind": "v",
-   "subject": "pair",
+   "subject": "badges",
    "opt": null,
    "start": 284.0667,
    "end": 286.0667,
@@ -2528,9 +2528,9 @@
    "tf": 14,
    "section": "drop",
    "firstInWindow": true,
-   "src": 82.0,
-   "rate": 0.8143,
-   "masterFrom": 81.04
+   "src": 42.96,
+   "rate": 1.3029,
+   "masterFrom": 42.0
   },
   {
    "i": 107,

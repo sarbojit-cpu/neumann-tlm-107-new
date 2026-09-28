@@ -124,7 +124,7 @@ REEL = [
       s=["z:ecosystem:8"]),
  dict(b=9, ch=4, t="WHICH ONE IS YOURS?", e="YOURS?", h="Which one is yours?",
       x="Comment nickel or black below, then hear it for yourself.",
-      s=["v:pair:3", "c:nickel_front_tall:3", "c:black_front:3"]),
+      s=["v:badges:3", "c:nickel_front_tall:3", "c:black_front:3"]),
  # OUTRO — 6.000 s: logos, partner line, numbers, website, socials
  dict(end=True, ch=4, t="", e="", h="",
       x="Shivansh Electronics is the Exclusive Partner of the Neumann TLM 107 Studio Set. Follow us.",
@@ -293,7 +293,7 @@ FILM = [
       s=["z:awards:8"]),
  dict(b=9, ch=4, t="WHICH ONE IS YOURS?", e="YOURS?", h="Which one is yours?",
       x="Nickel or black? Hear it in person, and tell us below.",
-      s=["v:pair:3", "c:nickel_ea4:3", "c:black_ea4:3"]),
+      s=["v:badges:3", "c:nickel_ea4:3", "c:black_ea4:3"]),
  # OUTRO — 9.933 s (290.067 -> 300.000, on the beat): logos, partner line,
  # numbers, website, socials
  dict(end=True, ch=4, t="", e="", h="",

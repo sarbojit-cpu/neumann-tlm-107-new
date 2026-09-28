@@ -1636,7 +1636,7 @@
    "i": 73,
    "w": 26,
    "kind": "v",
-   "subject": "pair",
+   "subject": "badges",
    "opt": null,
    "start": 168.0,
    "end": 170.0,
@@ -1647,9 +1647,9 @@
    "tf": 8,
    "section": "drop",
    "firstInWindow": true,
-   "src": 82.0,
-   "rate": 0.8143,
-   "masterFrom": 81.04
+   "src": 42.96,
+   "rate": 1.3029,
+   "masterFrom": 42.0
   },
   {
    "i": 74,
