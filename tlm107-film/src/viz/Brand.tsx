@@ -52,8 +52,8 @@ export const Outro: React.FC<VizProps> = ({ f, canvas, glow, beatF }) => {
 
   // ── layout ──
   const floorY = P ? 1010 : 930;
-  const ph = P ? 420 : 640;
-  const stageX = P ? W / 2 : 540;
+  const ph = P ? 420 : 580;
+  const stageX = P ? W / 2 : 460;
   const nw = nick ? ph * nick.ar : ph * 0.7;
   const bw = blk ? ph * 0.97 * blk.ar : ph * 0.7;
   const rise = at(0.5, 18);
