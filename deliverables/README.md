@@ -2,16 +2,17 @@
 
 | Folder | What | Canvas | Length |
 |---|---|---|---|
-| `reel-4k/` | Instagram / Shorts reel, in playable parts | 2160 × 3840 (9:16), 30 fps | 180.000 s (6 s outro) |
-| `video-4k/` | YouTube film, in playable parts | 3840 × 2160 (16:9), 30 fps | 300.000 s (~10 s outro) |
-| `audio-stems/` | Music bed and transition SFX, separately | 48 kHz / 24-bit WAV | full length of each film |
+| `reel-4k/` | Instagram / Shorts reel, 5 playable parts + full soundtrack `.m4a` | 2160 × 3840 (9:16), 30 fps | 180.000 s (6 s outro) |
+| `video-4k/` | YouTube film, 8 playable parts + full soundtrack `.m4a` | 3840 × 2160 (16:9), 30 fps | 300.000 s (~10 s outro) |
+| `audio-stems/` | Music bed and transition SFX, separately, for each cut | 48 kHz / 24-bit WAV | full length of each film |
 | `thumbnails/` | Portrait cover and landscape thumbnail | 4K + 1080p versions | — |
 | `VOICEOVER-SCRIPT.md` | The voiceover, window by window, ≤ 152 wpm | — | — |
 
 Each part is a normal MP4 that plays on its own, in order (`part01`, `part02`, …), with the
 music bed and transition SFX already embedded. The video in every part is the renderer's
 own 4K H.264 encode, stream-copied, never re-encoded. Each folder's `JOIN.md` has the
-one-line ffmpeg command that rejoins the parts with the full soundtrack.
+one-line ffmpeg command that rejoins the parts with the full soundtrack; the rejoined picture
+was checked frame for frame against the render (reel 5400 frames, film 9000 frames, identical).
 
 **Picture:** only the picture of Neumann's official TLM 107 film is used (its audio is
 discarded), rebuilt to 2560 × 1440 with Real-ESRGAN; every product photograph from the
