@@ -1,0 +1,25 @@
+{
+  "name": "tlm107-square",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Neumann TLM 107 — 30 s square 4K beat-synced animation (2160x2160) + 4K portrait thumbnail. Offered by Shivansh Electronics.",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "assets": "python3 scripts/prep_assets.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.497",
+    "@remotion/cli": "4.0.497",
+    "@remotion/renderer": "4.0.497",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.497"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "typescript": "5.6.3"
+  }
+}
