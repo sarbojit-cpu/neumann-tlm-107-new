@@ -2,8 +2,8 @@ import React from "react";
 import { AbsoluteFill, Img, continueRender, delayRender, staticFile } from "remotion";
 
 export const im = (k: string) => staticFile(`sq/img/${k}.webp`);
-export const LOGO_NEUMANN = staticFile("sq/logos/logo-neumann.png");
-export const LOGO_SHIVANSH = staticFile("sq/logos/logo-shivansh.png");
+export const LOGO_NEUMANN = staticFile("sq/logos/neumann-dark.png");
+export const LOGO_SHIVANSH = staticFile("sq/logos/shivansh-dark.png");
 
 export const RED = "#E1262F";
 export const NICKEL = "#D9CFBD";

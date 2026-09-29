@@ -189,9 +189,9 @@ const Intro: React.FC<{ g: G }> = ({ g }) => {
       />
       {/* logo lockup */}
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, opacity: logosIn * (1 - logosOut), transform: `scale(${lerp(0.94, 1, logosIn) * lerp(1, 1.08, logosOut)})`, filter: logosOut > 0 ? `blur(${logosOut * 10}px)` : undefined }}>
-        <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 520, left: 280, top: 346, borderRadius: 18, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }} />
+        <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 600, left: 240, top: 336 }} />
         <Scramble text="PRESENTED BY" p={t - 0.9} size={15} spacing={6} style={{ left: 0, right: 0, top: 492, textAlign: "center" }} />
-        <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 380, left: 350, top: 586, borderRadius: 16, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }} />
+        <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 470, left: 305, top: 572 }} />
       </div>
       {/* title assembles into the drop */}
       {titleIn > 0 ? (
@@ -226,6 +226,7 @@ const Hero: React.FC<{ g: G; u: number; d: number }> = ({ g, u, d }) => {
     <AbsoluteFill>
       <Stage g={g} />
       <AbsoluteFill style={{ background: `radial-gradient(420px 520px at 540px 560px, rgba(225,38,47,${0.22 + barPulse(g) * 0.15}), transparent 70%)` }} />
+      <Product src={im("b_mount2")} x={540} y={lerp(700, 590, a) - drift * 20} w={780} h={900} scale={lerp(1.25, 1, a)} shine={ramp(u, 0.25, 1.3)} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", lineHeight: 0.82 }}>
         {["TLM", "107"].map((w, i) => (
           <div
@@ -235,7 +236,7 @@ const Hero: React.FC<{ g: G; u: number; d: number }> = ({ g, u, d }) => {
               fontWeight: 900,
               fontSize: 430,
               color: "transparent",
-              WebkitTextStroke: "2px rgba(244,240,232,.28)",
+              WebkitTextStroke: "2.5px rgba(244,240,232,.62)", textShadow: "0 0 30px rgba(0,0,0,.35)",
               transform: `translateX(${(i ? 1 : -1) * lerp(0, 70, drift)}px)`,
             }}
           >
@@ -243,7 +244,6 @@ const Hero: React.FC<{ g: G; u: number; d: number }> = ({ g, u, d }) => {
           </div>
         ))}
       </div>
-      <Product src={im("b_mount2")} x={540} y={lerp(700, 590, a) - drift * 20} w={780} h={900} scale={lerp(1.25, 1, a)} shine={ramp(u, 0.25, 1.3)} />
       <Scramble text="NEUMANN.BERLIN  /  STUDIO CONDENSER" p={u - 0.1} size={17} style={{ left: 48, top: 44 }} />
       <Scramble text="LARGE DIAPHRAGM · TRANSFORMERLESS" p={u - 0.3} size={17} style={{ right: 48, bottom: 44 }} />
       <Reveal text="Record the whole truth." p={u - 0.2} size={50} font={SERIF} italic weight={400} style={{ left: 48, bottom: 80 }} />
@@ -698,15 +698,12 @@ const Outro: React.FC<{ g: G; u: number; d: number }> = ({ g, u }) => {
       <AbsoluteFill style={{ background: `radial-gradient(520px 380px at 540px 560px, rgba(225,38,47,${0.12 + p * 0.08}), transparent 70%)` }} />
       <Product src={im("b_mount2")} x={lerp(160, 320, s(0))} y={548 - u * 5} w={380} h={460} rot={lerp(-12, -4, s(0))} opacity={s(0)} shine={ramp(u, 0.4, 1.6)} />
       <Product src={im("n_mount2")} x={lerp(920, 760, s(0.08))} y={548 - u * 5} w={380} h={460} rot={lerp(12, 4, s(0.08))} opacity={s(0.08)} shine={ramp(u, 0.6, 1.8)} />
-      <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 380, left: 350, top: 54, borderRadius: 14, opacity: s(0.15), transform: `translateY(${(1 - s(0.15)) * -30}px)` }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 200, textAlign: "center", fontFamily: DISP, fontWeight: 900, fontSize: 150, letterSpacing: lerp(40, -4, s(0.1)), color: PAPER, opacity: s(0.1), lineHeight: 1 }}>
         TLM 107
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 796, textAlign: "center" }}>
-        <Reveal text="Available now at" p={u - 0.35} size={40} font={SERIF} italic weight={400} style={{ position: "relative", display: "inline-block" }} />
-      </div>
-      <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 360, left: 360, top: 850, borderRadius: 14, opacity: s(0.5), transform: `scale(${lerp(0.9, 1, s(0.5))})` }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 982, textAlign: "center", fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: "rgba(244,240,232,.85)", opacity: s(0.7) }}>
+      <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 460, left: 310, top: 58, opacity: s(0.15), transform: `translateY(${(1 - s(0.15)) * -30}px)` }} />
+      <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 540, left: 270, top: 806, opacity: s(0.5), transform: `scale(${lerp(0.9, 1, s(0.5))})` }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 990, textAlign: "center", fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: "rgba(244,240,232,.85)", opacity: s(0.7) }}>
         shivanshelectronics.in · +91 98316 62458 · +91 91477 00677
       </div>
     </AbsoluteFill>

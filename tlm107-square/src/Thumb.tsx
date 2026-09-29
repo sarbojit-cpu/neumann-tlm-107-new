@@ -23,18 +23,9 @@ export const Thumb: React.FC = () => {
       />
       <AbsoluteFill style={{ background: "radial-gradient(420px 560px at 540px 900px, rgba(225,38,47,.28), transparent 70%)" }} />
 
-      <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 520, left: 280, top: 80, borderRadius: 18, boxShadow: "0 20px 60px rgba(0,0,0,.6)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 262, textAlign: "center", fontFamily: MONO, fontSize: 22, letterSpacing: 8, color: GOLD }}>
+      <Img src={LOGO_NEUMANN} style={{ position: "absolute", width: 640, left: 220, top: 92 }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 272, textAlign: "center", fontFamily: MONO, fontSize: 22, letterSpacing: 8, color: GOLD }}>
         STUDIO CONDENSER MICROPHONE
-      </div>
-
-      {/* giant outline title behind the product */}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", lineHeight: 0.8 }}>
-        {["TLM", "107"].map((w) => (
-          <div key={w} style={{ fontFamily: DISP, fontWeight: 900, fontSize: 440, color: "transparent", WebkitTextStroke: "2.5px rgba(244,240,232,.3)" }}>
-            {w}
-          </div>
-        ))}
       </div>
 
       {/* polar motif */}
@@ -47,6 +38,16 @@ export const Thumb: React.FC = () => {
 
       <Product src={im("n_mount2")} x={760} y={1000} w={500} h={640} rot={6} opacity={0.95} />
       <Product src={im("b_mount2")} x={450} y={960} w={700} h={860} rot={-3} />
+
+      {/* giant outline title in front of the product */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", lineHeight: 0.8 }}>
+        {["TLM", "107"].map((w) => (
+          <div key={w} style={{ fontFamily: DISP, fontWeight: 900, fontSize: 440, color: "transparent", WebkitTextStroke: "3px rgba(244,240,232,.6)", textShadow: "0 0 30px rgba(0,0,0,.35)" }}>
+            {w}
+          </div>
+        ))}
+      </div>
+
 
       <div style={{ position: "absolute", left: 0, right: 0, top: 1290, textAlign: "center", fontFamily: DISP, fontWeight: 900, fontSize: 168, letterSpacing: -4, color: PAPER, lineHeight: 1, textShadow: "0 18px 50px rgba(0,0,0,.85)" }}>
         TLM 107
@@ -64,10 +65,7 @@ export const Thumb: React.FC = () => {
         ))}
       </div>
 
-      <div style={{ position: "absolute", left: 0, right: 0, top: 1718, textAlign: "center", fontFamily: SERIF, fontStyle: "italic", fontSize: 34, color: "rgba(244,240,232,.85)" }}>
-        Available now at
-      </div>
-      <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 300, left: 390, top: 1768, borderRadius: 14 }} />
+      <Img src={LOGO_SHIVANSH} style={{ position: "absolute", width: 600, left: 240, top: 1714 }} />
       <div style={{ position: "absolute", left: 60, right: 60, top: 1448, height: 2, background: `linear-gradient(90deg, transparent, ${RED}, transparent)`, opacity: 0.6 }} />
     </AbsoluteFill>
   );
