@@ -18,7 +18,7 @@ while [ $i -lt $FRAMES ]; do
     n=0
     # a hung chunk is killed after 30 min and retried (3 attempts)
     until timeout -k 20 1800 npx remotion render "$BUNDLE" $COMP "$f.tmp.mp4" --frames=$i-$e --scale=2 --muted \
-        --concurrency=${CONC:-4} --crf=${CRF:-16} --jpeg-quality=94 --log=error; do
+        --concurrency=${CONC:-4} --crf=${CRF:-16} --jpeg-quality=94 --log=error ${EXTRA:-}; do
       n=$((n + 1)); rm -f "$f.tmp.mp4"
       [ $n -ge 3 ] && { echo "chunk $i-$e FAILED after $n attempts"; exit 1; }
       echo "chunk $i-$e retry $n"
