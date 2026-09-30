@@ -15,7 +15,8 @@ import { hash } from "../lib/ease.ts";
 
 export const Stage: React.FC<{
   w: number; h: number; f: number; px: number; py: number; floorY: number; glow: number; tint?: "cool" | "warm" | "red";
-}> = ({ w, h, f, px, py, floorY, glow, tint = "cool" }) => {
+  ring?: boolean; dust?: boolean;
+}> = ({ w, h, f, px, py, floorY, glow, tint = "cool", ring = true, dust = true }) => {
   const key = tint === "warm" ? "rgba(255,226,186," : tint === "red" ? "rgba(255,120,140," : "rgba(196,232,255,";
   const ringR = Math.min(w, h) * 0.42;
   const rot = f * 0.12;
@@ -37,7 +38,7 @@ export const Stage: React.FC<{
       {/* red bounce, low right */}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 40% 30% at 88% 86%, rgba(225,38,63,${0.1 + 0.08 * glow}) 0%, rgba(225,38,63,0) 70%)` }} />
       {/* the chrome ring */}
-      <svg width={w} height={h} style={{ position: "absolute", inset: 0, transform: `translate(${px * 0.45}%, ${py * 0.45}%)`, opacity: 0.55 }}>
+      {ring ? <svg width={w} height={h} style={{ position: "absolute", inset: 0, transform: `translate(${px * 0.45}%, ${py * 0.45}%)`, opacity: 0.55 }}>
         <defs>
           <linearGradient id="stageRing" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stopColor="rgba(255,255,255,0.35)" />
@@ -57,7 +58,7 @@ export const Stage: React.FC<{
             );
           })}
         </g>
-      </svg>
+      </svg> : null}
       {/* floor */}
       <div
         style={{
@@ -68,7 +69,7 @@ export const Stage: React.FC<{
       />
       <div style={{ position: "absolute", left: "10%", right: "10%", top: floorY - 1, height: 2, background: "linear-gradient(90deg, transparent, rgba(221,246,255,0.35), transparent)" }} />
       {/* dust in the key */}
-      {Array.from({ length: 18 }).map((_, i) => {
+      {dust && Array.from({ length: 18 }).map((_, i) => {
         const x = hash(i + 1) * w;
         const y0 = hash(i + 50) * h * 0.8;
         const y = (y0 - f * (0.25 + hash(i + 9) * 0.5)) % (h * 0.8);

@@ -5,7 +5,7 @@
 | `reel-4k/` | Instagram / Shorts reel, 5 playable parts + full soundtrack `.m4a` | 2160 × 3840 (9:16), 30 fps | 180.000 s (6 s outro) |
 | `video-4k/` | YouTube film, 8 playable parts + full soundtrack `.m4a` | 3840 × 2160 (16:9), 30 fps | 300.000 s (~10 s outro) |
 | `audio-stems/` | Music bed and transition SFX, separately, for each cut | 48 kHz / 24-bit WAV | full length of each film |
-| `thumbnails/` | Portrait cover and landscape thumbnail | 4K + 1080p versions | — |
+| `thumbnails/` | Portrait cover and landscape thumbnail, each with the Neumann and Shivansh Electronics logos and www.shivanshelectronics.in | 4K + 1080p (+ 1280 × 720) versions | — |
 | `VOICEOVER-SCRIPT.md` | The voiceover, window by window, ≤ 152 wpm | — | — |
 
 Each part is a normal MP4 that plays on its own, in order (`part01`, `part02`, …), with the

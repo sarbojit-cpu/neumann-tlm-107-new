@@ -12,8 +12,8 @@ export type VizProps = { f: number; dur: number; canvas: Canvas; opt: string | n
 export const plotBox = (c: Canvas) =>
   c.portrait ? { cx: c.w / 2, cy: 690, w: 960, h: 720 } : { cx: 1320, cy: 500, w: 980, h: 740 };
 
-export const VizShell: React.FC<{ canvas: Canvas; f: number; fig: string; title: string; note?: string; glow?: number; children: React.ReactNode }> = ({
-  canvas, f, fig, title, note, glow = 0, children,
+export const VizShell: React.FC<{ canvas: Canvas; f: number; fig: string; title: string; note?: string; noteDy?: number; glow?: number; children: React.ReactNode }> = ({
+  canvas, f, fig, title, note, noteDy = 0, glow = 0, children,
 }) => {
   const b = plotBox(canvas);
   const q = easeOutCubic(clamp(f / 14));
@@ -42,7 +42,7 @@ export const VizShell: React.FC<{ canvas: Canvas; f: number; fig: string; title:
       </div>
       {children}
       {note ? (
-        <div style={{ position: "absolute", right: canvas.w - (b.cx + b.w / 2), top: b.cy + b.h / 2 + 18, textAlign: "right", fontFamily: FONT.mono, fontSize: canvas.portrait ? 15 : 13, letterSpacing: 3, color: "rgba(230,236,242,0.42)", opacity: q }}>
+        <div style={{ position: "absolute", right: canvas.w - (b.cx + b.w / 2), top: b.cy + b.h / 2 + 18 + noteDy, textAlign: "right", fontFamily: FONT.mono, fontSize: canvas.portrait ? 15 : 13, letterSpacing: 3, color: "rgba(230,236,242,0.42)", opacity: q }}>
           {note}
         </div>
       ) : null}
