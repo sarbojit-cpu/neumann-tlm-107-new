@@ -14,6 +14,9 @@ import { Mono, plotBox, VizShell, type VizProps } from "./Shell.tsx";
 const A_OF: Record<string, number> = { omni: 1, wide: 0.7, cardioid: 0.5, hyper: 0.25, fig8: 0 };
 const NAME: Record<string, string> = { omni: "OMNIDIRECTIONAL", wide: "WIDE CARDIOID", cardioid: "CARDIOID", hyper: "HYPERCARDIOID", fig8: "FIGURE-8" };
 
+// Portrait geometry: plot radius, plot centre below the box centre, formula line below its default.
+const P_R = 245, P_DY = 35, P_NOTE_DY = 18;
+
 const db = (r: number) => (Math.abs(r) < 0.02 ? "NULL" : `${(20 * Math.log10(Math.abs(r))).toFixed(1)} dB`);
 
 const PolarPlot: React.FC<{ a: number; cx: number; cy: number; R: number; draw: number; f: number; glow: number; portrait: boolean }> = ({ a, cx, cy, R, draw, f, glow, portrait }) => {
@@ -38,14 +41,14 @@ const PolarPlot: React.FC<{ a: number; cx: number; cy: number; R: number; draw: 
       {rings.map((r) => (
         <g key={r}>
           <circle cx={cx} cy={cy} r={R * r} fill="none" stroke="rgba(230,236,242,0.16)" strokeWidth={r === 1 ? 1.6 : 1} strokeDasharray={r === 1 ? undefined : "4 8"} />
-          {labels[r] ? <text x={cx + 8} y={cy - R * r + 18} fill="rgba(230,236,242,0.45)" fontFamily={FONT.mono} fontSize={fs - 3} letterSpacing={2}>{labels[r]}</text> : null}
+          {labels[r] && !(portrait && r === 1) ? <text x={cx + 8} y={cy - R * r + 18} fill="rgba(230,236,242,0.45)" fontFamily={FONT.mono} fontSize={fs - 3} letterSpacing={2}>{labels[r]}</text> : null}
         </g>
       ))}
       {Array.from({ length: 12 }).map((_, i) => {
         const t = (i / 12) * Math.PI * 2;
         return <line key={i} x1={cx} y1={cy} x2={cx + Math.sin(t) * R} y2={cy - Math.cos(t) * R} stroke="rgba(230,236,242,0.08)" strokeWidth={1} />;
       })}
-      {["0°", "90°", "180°", "270°"].map((l, i) => {
+      {!portrait && ["0°", "90°", "180°", "270°"].map((l, i) => {
         const t = (i * Math.PI) / 2;
         return (
           <text key={l} x={cx + Math.sin(t) * (R + 34)} y={cy - Math.cos(t) * (R + 34) + 6} fill="rgba(230,236,242,0.5)" fontFamily={FONT.mono} fontSize={fs - 2} textAnchor="middle" letterSpacing={2}>
@@ -69,17 +72,18 @@ const PolarPlot: React.FC<{ a: number; cx: number; cy: number; R: number; draw: 
         const x = cx + Math.sin(t) * d;
         const y = cy - Math.cos(t) * d;
         const col = r < -0.02 ? C.redHot : C.led;
+        const side = portrait && (s.ang === 0 || s.ang === 180);
         const wave = (k: number) => {
           const ph = ((f / 22 + k / 3) % 1);
-          return <circle key={k} cx={x} cy={y} r={14 + ph * 34} fill="none" stroke={col} strokeWidth={2} opacity={(1 - ph) * 0.5 * (0.25 + 0.75 * lvl) * draw} />;
+          return <circle key={k} cx={x} cy={y} r={portrait ? 13 + ph * 19 : 14 + ph * 34} fill="none" stroke={col} strokeWidth={2} opacity={(1 - ph) * 0.5 * (0.25 + 0.75 * lvl) * draw} />;
         };
         return (
           <g key={i}>
             <line x1={x} y1={y} x2={cx + Math.sin(t) * (R * 1.04)} y2={cy - Math.cos(t) * (R * 1.04)} stroke={col} strokeWidth={1.5} strokeDasharray="3 7" opacity={0.25 + 0.6 * lvl} />
             {[0, 1, 2].map(wave)}
             <circle cx={x} cy={y} r={11} fill={lvl < 0.02 ? "rgba(255,255,255,0.12)" : col} opacity={0.35 + 0.65 * lvl} style={{ filter: lvl > 0.05 ? `drop-shadow(0 0 ${10 * lvl}px ${col})` : undefined }} />
-            <text x={x + (portrait && s.ang === 180 ? 170 : 0)} y={y + (portrait && s.ang === 180 ? -6 : s.ang === 180 ? 52 : s.ang === 0 ? -34 : 48)} fill="rgba(230,236,242,0.8)" fontFamily={FONT.mono} fontSize={fs} textAnchor="middle" letterSpacing={3}>{s.label}</text>
-            <text x={x + (portrait && s.ang === 180 ? 170 : 0)} y={y + (portrait && s.ang === 180 ? 20 : s.ang === 180 ? 76 : s.ang === 0 ? -58 : 72)} fill={lvl < 0.02 ? "rgba(230,236,242,0.45)" : col} fontFamily={FONT.mono} fontSize={fs + 2} fontWeight={700} textAnchor="middle" letterSpacing={2}>
+            <text x={x + (side ? 46 : 0)} y={y + (side ? -5 : s.ang === 180 ? 52 : s.ang === 0 ? -34 : 48)} fill="rgba(230,236,242,0.8)" fontFamily={FONT.mono} fontSize={fs} textAnchor={side ? "start" : "middle"} letterSpacing={3}>{s.label}</text>
+            <text x={x + (side ? 46 : 0)} y={y + (side ? 20 : s.ang === 180 ? 76 : s.ang === 0 ? -58 : 72)} fill={lvl < 0.02 ? "rgba(230,236,242,0.45)" : col} fontFamily={FONT.mono} fontSize={fs + 2} fontWeight={700} textAnchor={side ? "start" : "middle"} letterSpacing={2}>
               {db(r)}{r < -0.02 ? " ⟲" : ""}
             </text>
           </g>
@@ -91,7 +95,7 @@ const PolarPlot: React.FC<{ a: number; cx: number; cy: number; R: number; draw: 
 
 export const Polar: React.FC<VizProps> = ({ f, dur, canvas, opt, glow, beatF }) => {
   const b = plotBox(canvas);
-  const R = canvas.portrait ? 290 : 250;
+  const R = canvas.portrait ? P_R : 250;
   const draw = easeOutCubic(clamp(f / 22));
   let a = A_OF[opt ?? "cardioid"] ?? 0.5;
   let name = NAME[opt ?? "cardioid"] ?? "CARDIOID";
@@ -101,9 +105,9 @@ export const Polar: React.FC<VizProps> = ({ f, dur, canvas, opt, glow, beatF }) 
     name = m < 0.5 ? "WIDE CARDIOID" : "HYPERCARDIOID";
   }
   const cur = PATTERNS.reduce((best, p, i) => (Math.abs(p.a - a) < Math.abs(PATTERNS[best].a - a) ? i : best), 0);
-  const cy = b.cy + (canvas.portrait ? 10 : 30);
+  const cy = b.cy + (canvas.portrait ? P_DY : 30);
   return (
-    <VizShell canvas={canvas} f={f} fig="FIG. P" title={`POLAR RESPONSE · ${name}`} note="FIRST-ORDER MODEL · r(θ) = a + (1 − a)·cos θ" glow={glow}>
+    <VizShell canvas={canvas} f={f} fig="FIG. P" title={`POLAR RESPONSE · ${name}`} note="FIRST-ORDER MODEL · r(θ) = a + (1 − a)·cos θ" noteDy={canvas.portrait ? P_NOTE_DY : 0} glow={glow}>
       <PolarPlot a={a} cx={b.cx} cy={cy} R={R} draw={draw} f={f} glow={glow} portrait={canvas.portrait} />
       <div style={{ position: "absolute", left: b.cx - b.w / 2, top: b.cy - b.h / 2 - 10, display: "flex", gap: 14 }}>
         {PATTERNS.map((p, i) => (
@@ -122,7 +126,7 @@ export const Polar: React.FC<VizProps> = ({ f, dur, canvas, opt, glow, beatF }) 
 /** All five in one breath — a morph through omni → figure-8 on the beat. */
 export const Polar5: React.FC<VizProps> = ({ f, canvas, glow, beatF }) => {
   const b = plotBox(canvas);
-  const R = canvas.portrait ? 290 : 250;
+  const R = canvas.portrait ? P_R : 250;
   const step = beatF * 1.4;
   const t0 = beatF * 0.5;
   const k = clamp((f - t0) / step, 0, 4.999);
@@ -132,8 +136,8 @@ export const Polar5: React.FC<VizProps> = ({ f, canvas, glow, beatF }) => {
   const cur = Math.round(k);
   const draw = easeOutCubic(clamp(f / 18));
   return (
-    <VizShell canvas={canvas} f={f} fig="FIG. 5" title="FIVE PATTERNS · ONE CAPSULE" note="FIRST-ORDER MODEL · r(θ) = a + (1 − a)·cos θ" glow={glow}>
-      <PolarPlot a={a} cx={b.cx} cy={b.cy + (canvas.portrait ? 10 : 30)} R={R} draw={draw} f={f} glow={glow} portrait={canvas.portrait} />
+    <VizShell canvas={canvas} f={f} fig="FIG. 5" title="FIVE PATTERNS · ONE CAPSULE" note="FIRST-ORDER MODEL · r(θ) = a + (1 − a)·cos θ" noteDy={canvas.portrait ? P_NOTE_DY : 0} glow={glow}>
+      <PolarPlot a={a} cx={b.cx} cy={b.cy + (canvas.portrait ? P_DY : 30)} R={R} draw={draw} f={f} glow={glow} portrait={canvas.portrait} />
       <div style={{ position: "absolute", left: b.cx - b.w / 2, top: b.cy - b.h / 2 - 10, display: "flex", gap: 14, alignItems: "center" }}>
         {PATTERNS.map((p, j) => (
           <div key={p.key} style={{ opacity: j <= cur ? 1 : 0.3, transform: `scale(${j === cur ? 1.15 : 1})` }}>
